@@ -1,0 +1,18 @@
+
+spring:
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: canok
+    password: pass123
+
+
+rabbitmq:
+  queue:
+    order:
+      name: order
+      exchange: order_exchange
+      routingKey: order_routing_key
+    email:
+      name: email
+      routingKey: email_routingKey
